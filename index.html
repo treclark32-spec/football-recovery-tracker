@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Recovery & Film Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Football Recovery & Film Tracker</h1>
+    <p>Track your recovery. Improve your performance.</p>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Player Dashboard</h2>
+      <p>Keep track of how your body feels and how you perform.</p>
+    </section>
+
+    <section class="dashboard">
+      <div class="card">
+        <h3>Daily Readiness</h3>
+        <p id="readiness-display">Not recorded</p>
+      </div>
+
+      <div class="card">
+        <h3>Soreness Level</h3>
+        <p id="soreness-display">Not recorded</p>
+      </div>
+
+      <div class="card">
+        <h3>Recovery Activities</h3>
+        <p id="activity-count">0 activities logged</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Daily Recovery Check-In</h2>
+      <form id="recovery-form">
+        <label for="readiness">How ready do you feel? (1-10)</label>
+        <input type="number" id="readiness" min="1" max="10" required>
+
+        <label for="soreness">How sore are you? (1-10)</label>
+        <input type="number" id="soreness" min="1" max="10" required>
+
+        <label for="activity">Recovery activity</label>
+        <input type="text" id="activity" placeholder="Example: Stretching or ice bath">
+
+        <button type="submit">Save Check-In</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Film Review Notes</h2>
+      <form id="film-form">
+        <label for="film-notes">Enter your film notes</label>
+        <textarea id="film-notes" placeholder="Write what you did well and what needs improvement." required></textarea>
+        <button type="submit">Save Film Notes</button>
+      </form>
+      <ul id="film-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Football Recovery & Film Tracker | Student Athlete MVP</p>
+  </footer>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
